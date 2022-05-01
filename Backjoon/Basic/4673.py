@@ -1,11 +1,16 @@
+c=[]
 def d(n):
     k=0
     a = list(str(n))
     for i in a:
         k += int(i)
-    print(int(n) + k)
+    c.append(int(n) + k)
+    if int(n) + k > 10000:
 
-for i in range(10):
-    d(i)
+        return c
+    return d(int(n) + k)
 
-d(7)
+
+f =set(range(1, 10000)) - set( d(1) )
+
+print(set(range(1, 10000)) - set( d(7) ))
