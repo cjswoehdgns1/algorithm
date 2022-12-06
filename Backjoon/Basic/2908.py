@@ -1,7 +1,0 @@
-a=input()
-b=a.split()
-c=list(b[0])
-d=list(b[1])
-c.reverse()
-d.reverse()
-print(max(int("".join(c)), int("".join(d))))
